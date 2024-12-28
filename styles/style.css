@@ -231,6 +231,37 @@ form textarea::placeholder {
     transition: all 0.3s ease;
 }
 
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content a {
+    color: #1da1f2;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+  
+
 .modal-content {
     background-color: var(--modal-bg); /* Fond dynamique */
     color: var(--modal-text-color); /* Texte dynamique */
