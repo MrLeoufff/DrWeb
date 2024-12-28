@@ -1,0 +1,40 @@
+[27-Dec-2024 14:46:24 UTC] Début du traitement via le site.
+[27-Dec-2024 14:46:24 UTC] Données POST : Array
+(
+)
+
+[27-Dec-2024 14:46:24 UTC] PHP Warning:  Undefined variable $dsn in C:\wamp64\www\DrWeb\contact.php on line 9
+[27-Dec-2024 14:46:24 UTC] DSN utilisé : 
+[27-Dec-2024 14:46:24 UTC] PHP Warning:  Undefined variable $response in C:\wamp64\www\DrWeb\contact.php on line 45
+[27-Dec-2024 14:46:24 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getStatus() on null in C:\wamp64\www\DrWeb\contact.php:45
+Stack trace:
+#0 {main}
+  thrown in C:\wamp64\www\DrWeb\contact.php on line 45
+[27-Dec-2024 14:47:24 UTC] Début du traitement via le site.
+[27-Dec-2024 14:47:24 UTC] Données POST : Array
+(
+)
+
+[27-Dec-2024 14:47:24 UTC] PHP Warning:  Undefined variable $dsn in C:\wamp64\www\DrWeb\contact.php on line 9
+[27-Dec-2024 14:47:24 UTC] DSN utilisé : 
+[27-Dec-2024 14:47:24 UTC] Email envoyé avec succès.
+[27-Dec-2024 14:48:23 UTC] Début du traitement via le site.
+[27-Dec-2024 14:48:23 UTC] Données POST : Array
+(
+)
+
+[27-Dec-2024 14:48:23 UTC] PHP Warning:  Undefined variable $dsn in C:\wamp64\www\DrWeb\contact.php on line 9
+[27-Dec-2024 14:48:23 UTC] DSN utilisé : 
+[27-Dec-2024 14:48:23 UTC] Email envoyé avec succès.
+[27-Dec-2024 14:48:23 UTC] PHP Warning:  Undefined variable $response in C:\wamp64\www\DrWeb\contact.php on line 30
+[27-Dec-2024 14:48:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getStatus() on null in C:\wamp64\www\DrWeb\contact.php:30
+Stack trace:
+#0 {main}
+  thrown in C:\wamp64\www\DrWeb\contact.php on line 30
+[27-Dec-2024 14:50:14 UTC] Email envoyé avec succès.
+[27-Dec-2024 14:51:46 UTC] Email envoyé avec succès.
+[27-Dec-2024 14:59:21 UTC] Email envoyé avec succès.
+[27-Dec-2024 15:01:57 UTC] Email envoyé avec succès.
+[27-Dec-2024 15:03:33 UTC] Email envoyé avec succès.
+[27-Dec-2024 15:15:56 UTC] Email envoyé avec succès.
+[27-Dec-2024 16:33:50 UTC] Email envoyé avec succès.
