@@ -99,3 +99,20 @@
 body:not(.dark-mode) .spider-container {
     display: none;
 }
+
+.spider-container {
+    pointer-events: none; /* Ignore les clics sur le conteneur */
+}
+
+.spider {
+    pointer-events: auto; /* Active les clics sur les araignées */
+}
+
+
+.spider-hover .spider-body {
+    transform: scale(1.5); /* Agrandit le corps */
+    background-color: red; /* Change la couleur */
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+

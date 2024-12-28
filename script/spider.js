@@ -6,9 +6,17 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
     
-    if (document.body.classList.contains("dark-mode")) {
-        addSpiders(spiderContainer, 5); 
-    }
+    const observer = new MutationObserver(() => {
+        if (document.body.classList.contains("dark-mode")) {
+            if (spiderContainer.children.length === 0) {
+                addSpiders(spiderContainer, 5);
+            }
+        } else {
+            spiderContainer.innerHTML = ""; // Supprime les araignées si le mode Dark est désactivé
+        }
+    });
+
+    observer.observe(document.body, { attributes: true, attributeFilter: ["class"] });
 
     function addSpiders(container, spiderCount) {
         for (let i = 0; i < spiderCount; i++) {
@@ -35,7 +43,31 @@ document.addEventListener("DOMContentLoaded", () => {
             spider.appendChild(web);
             spider.appendChild(body);
             container.appendChild(spider);
+
+            attachSpiderEvents(spider);
         }
+    }
+
+    function attachSpiderEvents(spider) {
+        let clickTimeout;
+    
+        // Effet de survol
+        spider.addEventListener("mouseover", () => {
+            spider.classList.add("spider-hover");
+        });
+    
+        spider.addEventListener("mouseleave", () => {
+            spider.classList.remove("spider-hover");
+        });
+
+        // Déplacement au double-clic
+        spider.addEventListener("click", () => {
+            clearTimeout(clickTimeout); // Annule le clic simple
+            const randomX = Math.random() * 90;
+            const randomY = Math.random() * 90;
+            spider.style.transform = `translate(${randomX}vw, ${randomY}vh)`;
+            spider.style.transition = "transform 1s ease";
+        });
     }
 });
 
